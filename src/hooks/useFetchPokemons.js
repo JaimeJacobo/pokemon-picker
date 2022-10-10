@@ -6,18 +6,15 @@ export function useFetchPokemons() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const pokemonPromises = pokemonList.pokemons.map(async (pokemon) => {
-        return await (
-          await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
-        ).json()
-      })
-      await Promise.all(pokemonPromises)
-        .then((fullfilledPromises) => {
-          setPokemons(fullfilledPromises)
+      const responses = await Promise.all(
+        pokemonList.pokemons.map(async (pokemon) => {
+          const pokemonApiData = await (
+            await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
+          ).json()
+          return { ...pokemonApiData, generation: pokemon.generation }
         })
-        .catch((err) => {
-          return err
-        })
+      )
+      setPokemons(responses)
     }
 
     fetchData()

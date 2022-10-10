@@ -1,19 +1,20 @@
-
 import { useFetchPokemons } from '../hooks/useFetchPokemons'
 
 const PokemonPicker = () => {
   const pokemons = useFetchPokemons()
-
-  console.log(pokemons)
-
   return (
     <div className="PokemonPicker">
-      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-      <label htmlFor="vehicle1"> I have a bike</label>
+      <input
+        type="checkbox"
+        name="vehicle1"
+        value="Bike"
+        // onChange={(e) => console.log(e.target.checked)}
+      />
+      <label htmlFor="vehicle1"> Generation 1</label>
       <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-      <label for="vehicle2"> I have a car</label>
+      <label htmlFor="vehicle2"> Generation 2</label>
       <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-      <label for="vehicle3"> I have a boat</label>
+      <label htmlFor="vehicle3"> Generation 3</label>
       {pokemons?.map((pokemon) => {
         return (
           <img
