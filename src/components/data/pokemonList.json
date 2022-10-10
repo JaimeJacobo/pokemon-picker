@@ -1,0 +1,35 @@
+{
+  "pokemons": [
+    { "name": "charmander", "generation": "1" },
+    { "name": "bulbasaur", "generation": "1" },
+    { "name": "squirtle", "generation": "1" },
+
+    { "name": "chikorita", "generation": "2" },
+    { "name": "cyndaquil", "generation": "2" },
+    { "name": "totodile", "generation": "2" },
+
+    { "name": "treecko", "generation": "3" },
+    { "name": "torchic", "generation": "3" },
+    { "name": "mudkip", "generation": "3" },
+
+    { "name": "turtwig", "generation": "4" },
+    { "name": "chimchar", "generation": "4" },
+    { "name": "piplup", "generation": "4" },
+
+    { "name": "snivy", "generation": "5" },
+    { "name": "tepig", "generation": "5" },
+    { "name": "oshawott", "generation": "5" },
+
+    { "name": "chespin", "generation": "6" },
+    { "name": "fennekin", "generation": "6" },
+    { "name": "froakie", "generation": "6" },
+
+    { "name": "rowlet", "generation": "7" },
+    { "name": "litten", "generation": "7" },
+    { "name": "popplio", "generation": "7" },
+
+    { "name": "grookey", "generation": "7" },
+    { "name": "scorbunny", "generation": "7" },
+    { "name": "sobble", "generation": "7" }
+  ]
+}
