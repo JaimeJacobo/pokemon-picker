@@ -1,7 +1,7 @@
 {
   "pokemons": [
-    { "name": "charmander", "generation": "1" },
     { "name": "bulbasaur", "generation": "1" },
+    { "name": "charmander", "generation": "1" },
     { "name": "squirtle", "generation": "1" },
 
     { "name": "chikorita", "generation": "2" },
@@ -31,5 +31,6 @@
     { "name": "grookey", "generation": "7" },
     { "name": "scorbunny", "generation": "7" },
     { "name": "sobble", "generation": "7" }
-  ]
+  ],
+  "totalGenerations": "7"
 }
